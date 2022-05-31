@@ -107,6 +107,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     background: rgb(220, 103, 103);
+    text-decoration: none;
 }
 
 .phone-icon-container {
