@@ -40,17 +40,17 @@ body {
     text-transform: uppercase;
 }
 
-.bunner-subtitle {
+.banner-subtitle {
     margin: 0;
     background: rgb(220, 103, 103);
 }
 
-.bunner-text {
+.banner-text {
     margin: 0;  
     background: rgb(49, 48, 48);
 }
 
-.bunner-title {
+.banner-title {
     margin: 5px 0;
     background: rgb(49, 48, 48);
 }
