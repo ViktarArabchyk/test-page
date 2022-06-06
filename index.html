@@ -119,6 +119,38 @@
             </article>
         </div>
     </section>
+
+    <script>
+        let gallery = document.getElementById('banners-gallery');
+        let scrollLeftBtn = document.getElementById('scroll-left-btn');
+        let scrollRightBtn = document.getElementById('scroll-right-btn');
+
+        scrollLeftBtn.addEventListener(
+            'click',
+            () => {
+                const bannerIndex = Math.round(gallery.scrollLeft / window.innerWidth);
+                if (bannerIndex > 0) {
+                    gallery.scrollTo(window.innerWidth * (bannerIndex - 1), 0);
+                } else {
+                    // scroll to the last banner
+                    gallery.scrollTo(gallery.scrollWidth, 0);
+                }
+            }
+        );
+
+        scrollRightBtn.addEventListener(
+            'click',
+            () => {
+                const bannerIndex = Math.round(gallery.scrollLeft / window.innerWidth);
+                if (bannerIndex < 2) {
+                    gallery.scrollTo(window.innerWidth * (bannerIndex + 1), 0);
+                } else {
+                    // scroll to the first banner
+                    gallery.scrollTo(0, 0);
+                }
+            }
+        );
+    </script>
 </body>
 
 </html>
